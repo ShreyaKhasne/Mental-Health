@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI-Powered Mental Health Companion</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="hero">
+        <p class="eyebrow">AI-Powered Mental Health Companion</p>
+        <h1>Feel heard, supported, and understood.</h1>
+        <p class="subhead">
+          Share what you’re feeling and get a grounded, empathetic response powered by
+          NLP, sentiment analysis, and transformer-ready workflows.
+        </p>
+      </header>
+
+      <section class="grid">
+        <div class="card">
+          <h2>Check in with text</h2>
+          <p class="muted">
+            Type how you’re feeling and we’ll analyze your emotions and offer supportive guidance.
+          </p>
+          <textarea
+            id="text-input"
+            placeholder="I feel overwhelmed at work and can’t switch off..."
+          ></textarea>
+          <button id="analyze-text" class="primary">Analyze Text</button>
+        </div>
+
+        <div class="card">
+          <h2>Simulate voice check-in</h2>
+          <p class="muted">
+            Paste a transcript (or future voice-to-text output) for emotion analysis.
+          </p>
+          <textarea
+            id="voice-input"
+            placeholder="Transcript of your voice note..."
+          ></textarea>
+          <button id="analyze-voice" class="secondary">Analyze Voice</button>
+        </div>
+      </section>
+
+      <section class="results" aria-live="polite">
+        <h2>Your Companion Response</h2>
+        <div class="result-grid">
+          <div>
+            <p class="label">Detected Emotion</p>
+            <p id="emotion" class="value">—</p>
+          </div>
+          <div>
+            <p class="label">Sentiment</p>
+            <p id="sentiment" class="value">—</p>
+          </div>
+          <div>
+            <p class="label">Confidence</p>
+            <p id="confidence" class="value">—</p>
+          </div>
+        </div>
+        <div class="response-card">
+          <p id="response">Share a check-in to see a supportive response.</p>
+        </div>
+      </section>
+
+      <section class="pillars">
+        <div>
+          <h3>NLP + Sentiment</h3>
+          <p>Tokenization, keyword spotting, and polarity scoring provide quick insights.</p>
+        </div>
+        <div>
+          <h3>Deep Learning Ready</h3>
+          <p>Swap in transformer embeddings or fine-tuned models whenever you’re ready.</p>
+        </div>
+        <div>
+          <h3>Chatbot Empathy</h3>
+          <p>Human-centered responses keep the conversation supportive and safe.</p>
+        </div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

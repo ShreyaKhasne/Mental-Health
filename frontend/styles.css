@@ -1,0 +1,159 @@
+:root {
+  color-scheme: light;
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  background: #f7f6fb;
+  color: #1c1c28;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.app {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 48px 24px 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.hero {
+  background: linear-gradient(135deg, #f0edff 0%, #e5f2ff 100%);
+  padding: 32px;
+  border-radius: 24px;
+  box-shadow: 0 20px 40px rgba(67, 56, 202, 0.12);
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 12px;
+  font-weight: 600;
+  color: #6b5bff;
+  margin-bottom: 12px;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 12px;
+}
+
+.subhead {
+  font-size: 16px;
+  color: #4a4a68;
+  max-width: 720px;
+}
+
+.grid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.card {
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(28, 28, 40, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card textarea {
+  min-height: 140px;
+  border-radius: 16px;
+  border: 1px solid #e0def5;
+  padding: 12px 14px;
+  resize: vertical;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+button {
+  border: none;
+  padding: 12px 18px;
+  border-radius: 999px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.primary {
+  background: #6b5bff;
+  color: #fff;
+}
+
+.secondary {
+  background: #f2efff;
+  color: #3e2dd8;
+}
+
+.results {
+  background: #ffffff;
+  padding: 28px;
+  border-radius: 24px;
+  box-shadow: 0 12px 30px rgba(28, 28, 40, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.result-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 16px;
+}
+
+.label {
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  color: #6b6b80;
+  margin-bottom: 8px;
+}
+
+.value {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.response-card {
+  background: #f7f6ff;
+  padding: 20px;
+  border-radius: 16px;
+  border: 1px solid #ebe7ff;
+  font-size: 16px;
+  color: #2d2a45;
+}
+
+.pillars {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.pillars div {
+  padding: 20px;
+  border-radius: 18px;
+  background: #ffffff;
+  box-shadow: 0 8px 24px rgba(28, 28, 40, 0.06);
+}
+
+.muted {
+  color: #6b6b80;
+  font-size: 14px;
+}
+
+@media (max-width: 720px) {
+  .hero h1 {
+    font-size: 28px;
+  }
+}
